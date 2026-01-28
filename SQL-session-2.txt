@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 SQL session-3 22-01-2026
 SQL keywords are NOT case sensitive. ex: SELECT is same as select.
 
@@ -211,5 +211,3 @@ It is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG())
 
 HAVING clause was added to SQl because the WHERE keyword cannot be used with 
 Aggerate functions.
-
->>>>>>> 7140b64d50992a4c257a40aa565fbfbe365cddb6
