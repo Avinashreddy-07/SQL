@@ -211,3 +211,7 @@ It is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG())
 
 HAVING clause was added to SQl because the WHERE keyword cannot be used with 
 Aggerate functions.
+<<<<<<< HEAD
+=======
+
+>>>>>>> aa992536580081b8426dab91ac65645e23e50294
