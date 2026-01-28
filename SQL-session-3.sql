@@ -212,7 +212,7 @@ select max(payment_date) FROM sakila.payment;
 select payment_id, customer_id, amount, payment_date
 from sakila.payment
 where payment_date >= (
-					select max(payment_date) - interval 10 day
+					select max(payment_date) - interval 50 day
 					from sakila.payment
 	);
 
