@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 SQL session-3 22-01-2026
 SQL keywords are NOT case sensitive. ex: SELECT is same as select.
 
@@ -104,3 +105,111 @@ It is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG())
 HAVING clause was added to SQl because the WHERE keyword cannot be used with 
 Aggerate functions.
 
+=======
+SQL session-3 22-01-2026
+SQL keywords are NOT case sensitive. ex: SELECT is same as select.
+
+SELECT - extracts data from a database
+
+select * from actor
+
+select Customername, City 
+from Customers;
+
+DISTINCT - used to return only unique values.
+
+select distinct amount
+from payment;
+
+SELECT DISTINCT Country 
+FROM Customers;
+
+SELECT COUNT(DISTINCT Country) AS Distinct_countries
+FROM Costomers;
+
+WHERE Clause - used to filter records.
+
+select *
+from actor
+where first_name like 'G%';
+order by last_name asc;
+
+SELECT * 
+FROM Customers
+WHERE Country ='Mexico';
+
+Operations used in WHERE Clause:
+ =,<,>,>=,<=,<>(not equal),BETWEEN,LIKE(Search for a pattern),IN
+ 
+ORDER BY - Sort the result 
+
+SELECT * 
+FROM Products
+ORDER BY ProductName ASC|DESC 
+ 
+AND Operator
+
+SELECT *
+FROM Customers
+WHERE Country = 'Spain' AND CustomerName LIKE 'G%';
+
+OR Operator
+
+SELECT *
+FROM Customers
+WHERE Country = 'Spain' 
+AND ( CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');
+
+NOT Operator
+
+NOT BETWEEN 10 AND 60 
+NOT IN ('paris','London')
+NOT CustomerID > 50
+NOT LIKE 'A%'
+
+INSERT INTO - statement is used to insert new records in a table.
+
+INSERT INTO Customers( CustomerName, City, Country)
+VALUES
+('Cardi', 'Liverpool', 'UK'),
+('Tom', 'Sandes', 'Norway'),
+('jane', 'Stavanger', 'Norway');
+
+UPDATE - statement is used to modify the existing records in a table.
+
+UPDATE Customers
+SET ContactName = 'Alfred smith', City = 'Berlin'
+WHERE CustomerID = 1;
+
+DELETE - statement is used to delete existing records in a table.
+
+DELETE FROM Customers WHERE CostomerName = 'Alfred Smith'
+DELETE Customer -- Delete all rows in a table, without deleting the table.
+
+DROP TABLE Customers -- To DELETE the Table completly use DROP TABLE
+
+LIMIT - this clause is used to specify the number of records to return.
+
+SELECT * FROM Customers 
+LIMT 3;
+
+MIN(), MAX()
+
+LIKE - used in a WHERE clause to search for specified pattern in a column.
+
+% sign represents zero, one, or multiple characters.
+_ sign represents one single character.
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20
+AND CategoryID IN (1,2,3);
+
+GROUP BY - groups rows that have the same values into summary rows, like "find
+the number of customers in each country."
+
+It is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG())
+
+HAVING clause was added to SQl because the WHERE keyword cannot be used with 
+Aggerate functions.
+
+>>>>>>> 7140b64d50992a4c257a40aa565fbfbe365cddb6
